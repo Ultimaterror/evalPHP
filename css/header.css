@@ -1,0 +1,35 @@
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+}
+li {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    
+}
+a:hover {
+    background-color: rgb(71, 44, 37);
+}
+a {
+    padding: 15px 30px 15px 30px;
+    border: 2px whitesmoke solid;
+    border-radius: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+a:active{
+    text-decoration: underline;
+}
+header {
+    align-self: stretch;
+    background-color: #1c2126;
+    padding: 5px;
+}
