@@ -13,20 +13,18 @@
 <body>
     <?php require 'templates/header.php'; ?>
     <h1>Accueil</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus corporis aut officia illum similique nostrum cum eveniet sapiente molestias, saepe repudiandae, quae voluptatum sit dolore nihil non quos obcaecati dicta?</p>
-    <?php 
-    
-    if($_SESSION['images'] !== false){
-        echo "<br>test images";
-    }
-    if($_SESSION['annexes'] !== false){
-        echo "<br>test annexes";
-    }
-    if($_SESSION['liens'] !== false){
-        echo "<br>test liens";
-    }
-    echo "<br>";
-    var_dump($_SESSION);
-    ?>
+    <div>
+        <p>Sur ce site je vais parler de manchots, et plus particulièrement des manchots empereurs</p>
+        <?php if(isset($_SESSION['commentairesOui'])) :?>
+        <p class="comm">J'ai demandé à ma mère pour le thème et elle m'a dit ça</p>
+        <?php endif ?>
+    </div>
+    <?php if(isset($_SESSION['imagesNon']) == false) : ?>
+        <img src="/images/manchot_empereur_seul.jpg" alt="Manchot Seul">
+        <span>Source : Futura Sciences</span>
+        <?php if(isset($_SESSION['commentairesOui'])) :?>
+            <a href="https://www.futura-sciences.com/planete/definitions/zoologie-manchot-empereur-9866/">ICI</a>
+        <?php endif ?>
+    <?php endif ?>
 </body>
 </html>

@@ -15,18 +15,11 @@ li {
     padding: 5px;
     
 }
-a:hover {
-    background-color: rgb(71, 44, 37);
-}
-a {
+header a {
     padding: 15px 30px 15px 30px;
     border: 2px whitesmoke solid;
     border-radius: 20px;
-    text-decoration: none;
     color: whitesmoke;
-}
-a:active{
-    text-decoration: underline;
 }
 header {
     align-self: stretch;

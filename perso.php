@@ -9,6 +9,7 @@
     <title>Perso</title>
     <link rel="stylesheet" href="/css/all.css">
     <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/form.css">
 </head>
 <body>
     <?php require 'templates/header.php'; ?>
@@ -27,12 +28,12 @@
             </div>
             <div class="form-group">
                 <div class="form-radio">
-                    <input type="radio" name="annexes" value="oui" checked>
-                    <label for="oui">Afficher les infos annexes</label>
+                    <input type="radio" name="commentaires" value="oui">
+                    <label for="oui">Afficher les commentaires</label>
                 </div>
                 <div class="form-radio">
-                    <input type="radio" name="annexes" value="non">
-                    <label for="non">Ne pas afficher d'infos annexes</label>
+                    <input type="radio" name="commentaires" value="non" checked>
+                    <label for="non">Ne pas afficher de commentaires</label>
                 </div>
             </div>
             <div class="form-group">
@@ -47,7 +48,6 @@
             </div>
         <button type="submit">Validation</button>
     </form>
-        <li><a href="/controllers/destroy.php">Remettre les valeurs par défaut et se déconnecter</a></li>
     <?php else : ?>
         <h1>Vous devez être connecté pour accéder à cette page</h1>
     <?php endif ?>

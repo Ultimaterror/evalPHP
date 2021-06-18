@@ -1,9 +1,33 @@
 body {
     margin: 0;
+    margin-bottom: 10px;
     font-weight: 400;
     line-height: 1.66;
-    font-size: 15px;
+    font-size: 18px;
     font-family: "Open Sans",sans-serif;
     background-color: #2b283f;
     color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+h1 {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    cursor:  pointer;
+}
+a:hover {
+    background-color: rgb(71, 44, 37);
+}
+a:active{
+    text-decoration: underline;
+}
+div {
+    margin: 8px 15px 8px 15px;
+}
+.comm {
+    font-size: 14px;
+    font-style: italic
 }

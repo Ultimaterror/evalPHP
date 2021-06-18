@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +11,7 @@
     <link rel="stylesheet" href="/css/header.css">
 </head>
 <body>
+    <?php require 'templates/header.php'; ?>
     <h1>Infos</h1>
 </body>
 </html>

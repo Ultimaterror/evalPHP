@@ -1,0 +1,18 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+button {
+    background-color: rgb(85, 85, 85);
+    color: whitesmoke;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    margin: 8px 5px 8px 5px;
+    border: 1px whitesmoke solid;
+}
+.form-group {
+    border: 1px darkslategrey solid;
+    margin: 8px 5px 8px 5px;
+    padding: 5px;
+}
