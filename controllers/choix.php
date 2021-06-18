@@ -1,26 +1,25 @@
 <?php
 session_start();
 
-if($_POST['images'] == "non") {
-    $_SESSION['imagesNon'] = false;
+if($_POST['images'] == "on") {
+    $_SESSION['images'] = true;
 }
 else {
-    unset($_SESSION['imagesNon']);
+    unset($_SESSION['images']);
 }
 
-if($_POST['commentaires'] == "oui") {
-    $_SESSION['commentairesOui'] = true;
+if($_POST['commentaires'] == "on") {
+    $_SESSION['commentaires'] = true;
 }
 else {
-    unset($_SESSION['commentairesOui']);
+    unset($_SESSION['commentaires']);
 }
 
-if($_POST['liens'] == "oui") {
-    $_SESSION['liensOui'] = true;
+if($_POST['liens'] == "on") {
+    $_SESSION['liens'] = true;
 }
 else {
-    unset($_SESSION['liensOui']);
+    unset($_SESSION['liens']);
 }
-
 header("Location: /");
 exit();

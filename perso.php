@@ -17,34 +17,16 @@
         <h1>Bonjour <?= ucfirst($_SESSION['pseudo']) ?></h1>
         <form action="/controllers/choix.php" method="POST">
             <div class="form-group">
-                <div class="form-radio">
-                    <input type="radio" name="images" value="oui" checked>
-                    <label for="oui">Afficher les images</label>
-                </div>
-                <div class="form-radio">    
-                    <input type="radio" name="images" value="non">
-                    <label for="non">Ne pas afficher d'images</label>
-                </div>
+                <input type="checkbox" name="images" checked>
+                <label for="images">Afficher les images</label>
             </div>
             <div class="form-group">
-                <div class="form-radio">
-                    <input type="radio" name="commentaires" value="oui">
-                    <label for="oui">Afficher les commentaires</label>
+                <input type="checkbox" name="commentaires">
+                <label for="commentaires">Afficher les commentaires</label>
                 </div>
-                <div class="form-radio">
-                    <input type="radio" name="commentaires" value="non" checked>
-                    <label for="non">Ne pas afficher de commentaires</label>
-                </div>
-            </div>
             <div class="form-group">
-                <div class="form-radio">
-                    <input type="radio" name="liens" value="oui">
-                    <label for="oui">Afficher les liens</label>
-                </div>
-                <div class="form-radio">
-                    <input type="radio" name="liens" value="non" checked>
-                    <label for="non">Ne pas afficher de liens</label>
-                </div>
+                <input type="checkbox" name="liens">
+                <label for="liens">Afficher les liens</label>
             </div>
         <button type="submit">Validation</button>
     </form>

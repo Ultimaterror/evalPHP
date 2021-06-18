@@ -11,23 +11,26 @@ body {
     flex-direction: column;
     align-items: center; 
 }
-h1 {
+h1, p {
     text-align: center;
 }
 a {
-    text-decoration: none;
     cursor:  pointer;
-}
-a:hover {
-    background-color: rgb(71, 44, 37);
+    color: whitesmoke;
+    font-size: 16px;
 }
 a:active{
     text-decoration: underline;
+    font-style: italic
 }
 div {
     margin: 8px 15px 8px 15px;
 }
 .comm {
+    font-size: 12px;
+    font-style: italic
+}
+.src {
     font-size: 14px;
     font-style: italic
 }
