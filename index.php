@@ -22,7 +22,7 @@
     <?php if(isset($_SESSION['imagesNon']) == false) : ?>
         <img src="/images/manchot_empereur_seul.jpg" alt="Manchot Seul">
         <span>Source : Futura Sciences</span>
-        <?php if(isset($_SESSION['commentairesOui'])) :?>
+        <?php if(isset($_SESSION['liensOui'])) :?>
             <a href="https://www.futura-sciences.com/planete/definitions/zoologie-manchot-empereur-9866/">ICI</a>
         <?php endif ?>
     <?php endif ?>
